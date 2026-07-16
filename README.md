@@ -22,8 +22,8 @@ A lightweight Windows screen recorder with a clean dark UI, optional microphone 
 ## Installation (from source)
 
 ```bash
-git clone https://github.com/hemanttyagi1001/hemanttyagi-screen-recorder-tool.git
-cd hemanttyagi-screen-recorder-tool
+git clone https://github.com/hemanttyagi1001/screen-recorder-app.git
+cd screen-recorder-app
 pip install -r requirements.txt
 ```
 
