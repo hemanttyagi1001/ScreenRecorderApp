@@ -31,6 +31,8 @@ try:
 except Exception:
     FFMPEG_EXE = None
 
+__version__ = "1.0.0"
+
 MUTEX_NAME = "ScreenRecorderApp_SingleInstance_Mutex"
 
 AUDIO_SAMPLE_RATE = 44100
@@ -91,7 +93,7 @@ class ScreenRecorderApp:
         self.tray_icon = None
 
         self.root = tk.Tk()
-        self.root.title("Screen Recorder")
+        self.root.title(f"Screen Recorder v{__version__}")
         self.root.resizable(False, False)
         self.root.configure(bg="#1e1e2e")
 
@@ -127,6 +129,12 @@ class ScreenRecorderApp:
         tk.Label(
             self.root, text="Record your entire screen",
             font=("Segoe UI", 11), fg="#a6adc8", bg="#1e1e2e"
+        ).pack(pady=(0, 0))
+
+        # Version
+        tk.Label(
+            self.root, text=f"v{__version__}",
+            font=("Segoe UI", 9), fg="#6c7086", bg="#1e1e2e"
         ).pack(pady=(0, 10))
 
         # Info frame

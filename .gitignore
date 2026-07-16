@@ -1,0 +1,22 @@
+# .gitignore version: 1.0.0
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# PyInstaller build artifacts
+build/
+dist/
+*.manifest
+
+# Recordings
+*.mp4
+*.wav
+
+# OS
+Thumbs.db
+Desktop.ini
